@@ -14,8 +14,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/event" element={<EventPage/>} />
-          {/* <Route path="/vite" element={<VitePage />} /> */}
+          <Route path="/event/*" element={<EventPage />} />
           <Route path="*" element={<>Page Not Found</>} />
 
         </Routes>

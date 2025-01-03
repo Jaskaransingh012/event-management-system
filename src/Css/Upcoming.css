@@ -1,0 +1,120 @@
+.image-thumbnail {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaf2ff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 18px;
+}
+
+.month {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.event-details {
+    text-align: center;
+}
+
+.event-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0;
+}
+
+.event-attendees {
+    font-size: 14px;
+    color: #666;
+}
+
+.divider {
+    margin: 10px 0;
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    width: 100%;
+}
+
+.event-footer {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.event-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    p{
+        margin-top: 6px;
+        margin-bottom: 0 !important;
+    }
+ img {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+ }
+}
+
+.delete-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.delete-button i {
+    font-size: 16px;
+}
+
+.delete-button:hover {
+    background-color: #0056b3;
+}
+.card-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.uni-name{
+    margin-top: 5px;
+    font-size: small;
+}

@@ -17,7 +17,7 @@ function Navbar() {
 
                 <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                     <li><Link to="/" className="nav-link px-2 link-secondary">Home</Link></li>
-                    <li><Link to="/event" className="nav-link px-2">Events</Link></li>
+                    <li><Link to="/event/upcoming" className="nav-link px-2">Events</Link></li>
                     <li><Link to="/clubs" className="nav-link px-2">Clubs</Link></li>
                     <li><Link to="/faq" className="nav-link px-2">FAQs</Link></li>
                     <li><Link to="/about" className="nav-link px-2">About</Link></li>

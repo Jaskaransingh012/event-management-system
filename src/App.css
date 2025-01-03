@@ -104,6 +104,8 @@
     color: #007bff;
   } */
 .event-btn {
+  text-decoration: none;
+  color: black;
   border-radius: 10px;
   border: none;
   background: none;

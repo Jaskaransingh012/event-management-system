@@ -1,7 +1,11 @@
 import React from 'react'
+import Images from '../Images';
+import Logo from "../../assets/Logo.png"
+import "../../Css/Upcoming.css"
 const events = [
     {
         id: 1,
+        image: Images.logo,
         title: "Tech Symposium 2025",
         date: "January 15, 2025",
         description: "Explore the latest advancements in technology and innovation.",
@@ -32,25 +36,32 @@ const UpcomingEvent = () => {
             </header>
 
             <section className="event-list">
-                {/* {events.map((event) => (
-                    <div key={event.id} className="event-card">
-                        <h2>{event.title}</h2>
-                        <p><strong>Date:</strong> {event.date}</p>
-                        <p><strong>Location:</strong> {event.location}</p>
-                        <p>{event.description}</p>
+                <div className="event-card">
+                    <div className="card-wrapper">
+                        <div className="event-date">
+                            <span className="date">06</span>
+                            <span className="month">OCT</span>
+                        </div>
+                        <div className="event-details">
+                            <h3 className="event-title">Student life</h3>
+                            <p className="event-attendees">1,267 attenders</p>
+                            <hr className="divider" />
+                        </div>
                     </div>
-                ))} */}
-                <div class="event-card">
-                    <div class="event-header">
-                        <h3>Tech Meetup 2025</h3>
-                        <span class="event-category">Workshop</span>
+
+                    <div className="event-footer">
+                        <div className="event-logo">
+                            <img
+                                src={Logo}
+                                alt="Harper Adams University"
+                            />
+                            <p className='uni-name'>Chitkara <br /> University</p>
+                        </div>
+                        <button className="delete-button">
+                            <i className="fa fa-trash"></i> View Details
+                        </button>
                     </div>
-                    <div class="event-details">
-                        <p><strong>Date:</strong> January 15, 2025</p>
-                        <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
-                        <p><strong>Location:</strong> Hall A, Campus Center</p>
-                    </div>
-                    <button class="event-button">View Details</button>
+
                 </div>
             </section>
         </div>
