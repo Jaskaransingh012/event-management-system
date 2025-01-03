@@ -1,0 +1,132 @@
+.event-page {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.event-banner {
+  background: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.event-banner h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.event-banner p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.event-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.event-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.event-category {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.event-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.event-button {
+  display: block;
+  width: 100%;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.event-button:hover {
+  background-color: #0056b3;
+}
+
+/* .event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .event-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-card h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .event-card p {
+    margin: 5px 0;
+  }
+  
+  .event-card strong {
+    color: #007bff;
+  } */
+.event-btn {
+  border-radius: 10px;
+  border: none;
+  background: none;
+  position: relative;
+}
+
+.event-btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: rgb(11, 94, 215, 0.5);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.3s;
+  transform: scaleX(0);
+
+}
+
+.event-btn.active::after {
+  transform: scaleX(1);
+}
+
+.event-btn:hover::after {
+  transform: scaleX(1);
+}
